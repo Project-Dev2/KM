@@ -1,0 +1,53 @@
+.landing {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(./../../assets/imgs/landing.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .landing .box {
+    text-align: center;
+  }
+  .landing h1,
+  .landing h2 {
+    color: rgb(15, 1, 1);
+    line-height: 1.5;
+    animation: fadeInLeft 1.3s ease-in-out;
+  }
+  .landing h1 {
+    font-size: 55px;
+    font-weight: bold;
+  }
+  .landing h2 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-300px);
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .landing .main-btn {
+    background-color: rgb(59, 111, 189);
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 15px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    display: inline-block;
+    transition: 0.7s ease;
+    margin-top: 25px;
+  }
+  .landing .main-btn:hover {
+    background-color: rgb(106, 161, 243);
+    transform: scale(1.1);
+  }

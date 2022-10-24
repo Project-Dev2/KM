@@ -1,0 +1,52 @@
+    /* ----- # Start Title # ----- */
+    .main-heading {
+        text-align: center;
+        font-weight: 600;
+        font-size: 28px;
+        position: relative;
+        margin-bottom: 55px;
+        color: #eaecee;
+        text-transform: uppercase;
+      }
+      .main-heading::before {
+        content: "";
+        position: absolute;
+        background-color: rgb(59, 111, 189);
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -25px;
+        width: 50px;
+        height: 3px;
+      }
+      /* ----- # End Title # ----- */
+
+   .skills {
+    margin-top: 50px;
+   }
+  .logoHtml {
+    width: 250px;
+    height: 250px;
+  }
+  .logoCss {
+    width: 180px;
+    height: 180px;
+  }
+  .logoJs {
+    width: 250px;
+    height: 250px;
+  }
+  .logoGitHub {
+    width: 250px;
+    height: 250px;
+  }
+  .logoGit {
+    width: 250px;
+    height: 250px;
+  }
+  .logoBootstrap {
+    width: 300px;
+  }
+  .logoNpm {
+    width: 200px;
+  }
+  

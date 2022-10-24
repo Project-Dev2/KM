@@ -1,0 +1,55 @@
+  /* ----- # Start Title # ----- */
+  .main-heading {
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+    position: relative;
+    margin-bottom: 65px;
+    color: #eaecee;
+    text-transform: uppercase;
+  }
+  .main-heading::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(59, 111, 189);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -25px;
+    width: 50px;
+    height: 3px;
+  }
+  /* ----- # End Title # ----- */
+
+  .interests .row img {
+    height: 17rem;
+    width: 26rem;
+  }
+  @media (max-width: 565px) {
+    .interests .row img {
+      width: 100%;
+    }
+  }
+  .interests .row .box {
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+  }
+  .interests .row .box::before {
+    content: attr(data-work);
+    position: absolute;
+    background-color: rgba(213, 228, 252, 0.75);
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+    font-size: 1.5rem;
+    transform: translateX(calc(-100% - 5px));
+    z-index: 1;
+  }
+  .interests .row .box:hover::before {
+    transform: translateX(0);
+  }

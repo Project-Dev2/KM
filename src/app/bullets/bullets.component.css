@@ -1,0 +1,55 @@
+.navBullets {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    list-style: none;
+    z-index: 1000;
+  }
+  @media (max-width: 991px) {
+    .navBullets {
+      display: none;
+    }
+  }
+  .navBullets li {
+    width: 54px;
+    height: 54px;
+    background-color: #232324;
+    box-shadow: 0 0 10px #eaecee;
+    margin: 10px 0;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    padding: 11px 17px;
+    transition: transform 1s;
+  }
+  .navBullets li:hover {
+    border-radius: 50% 0 0 50%;
+    background-color: #232324;
+    transform: translateX(10px);
+  }
+  .navBullets i {
+    color: rgba(255, 255, 255, 0.877);
+    font-weight: bold;
+    font-size: 21px;
+  }
+  .navBullets i:hover {
+    color: #fff;
+  }
+  .navBullets .tooltips {
+    background-color: #232324;
+    width: 90px;
+    color: rgba(255, 255, 255, 0.877);
+    padding: 15px 10px;
+    position: absolute;
+    left: 38px;
+    top: 0;
+    border-radius: 0 10% 10% 0;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+  }
+  .navBullets li:hover .tooltips {
+    display: block;
+  }

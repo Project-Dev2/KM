@@ -1,0 +1,35 @@
+/* ----- # Start Title # ----- */
+.main-heading {
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+    position: relative;
+    margin-bottom: 65px;
+    color: #eaecee;
+    text-transform: uppercase;
+    margin-top: 100px;
+  }
+  .main-heading::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(59, 111, 189);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -25px;
+    width: 50px;
+    height: 3px;
+  }
+  /* ----- # End Title # ----- */
+
+  .contact {
+    padding-bottom: 50px;
+  }
+  .contact .card {
+    color: #fff;
+    background-color: #232324;
+    box-shadow: 0 0 10px rgb(59, 111, 189);
+  }
+  .contact .card h4 {
+    font-weight: bold;
+    color: #fff;
+  }

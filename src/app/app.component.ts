@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
+import AOS from "aos";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,29 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mk';
+
+  @HostListener("window:scroll", []) onWindowScroll() {
+    this.scrollFunction();
+  }
+
+  ngOnInit(): void {
+    AOS.init();
+  }
+
+  onscroll() {
+    this.scrollFunction()
+  }
+
+  scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("btn-back-to-top").style.display = "block";
+    } else {
+        document.getElementById("btn-back-to-top").style.display = "none";
+    }
+  }
+  
+  topFunction() {
+    document.body.scrollTop = 0; //For Safari
+    document.documentElement.scrollTop = 0; //For Chrome, Firefox, IE and Opera
+  }
 }
